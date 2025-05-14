@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "Poppins";
+    src: url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.d-none {
+    display: none;
+}
+
+.spinner-container {
+    text-align: center;
+
+    img {
+        width: 50px;
+    }
+}
+
+body {
+    display: flex;
+    height: 100vh;
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        border: 1px solid #ccc;
+        width: 250px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        transition: width 0.2s ease-in-out;
+
+        #aside-menu-trigger-button {
+            background-color: transparent;
+            border: none;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            outline: none;
+            margin-bottom: 15px;
+
+            &:hover {
+                cursor: pointer;
+                background-color: #ccc;
+            }
+        }
+
+        img {
+            width: 250px;
+            width: 100%;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #2c2d90;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px 0;
+            border-radius: 5px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            img {
+                width: 20px;
+                height: 20px;
+                margin: 0;
+            }
+
+            &:hover {
+                background-color: #191b6d;
+            }
+        }
+    }
+
+    #content {
+        transition: 0.2s ease-in-out;
+        margin-left: 270px;
+        margin-right: 20px;
+        margin-top: 20px;
+        width: 100%;
+    }
+}
